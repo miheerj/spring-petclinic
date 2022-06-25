@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: miheerjspringpetclinic 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: miheerjspringpetclinic
+  template:
+    metadata:
+      labels:
+        app: miheerjspringpetclinic 
+    spec:
+      containers:
+        - name: miheerjspringpetclinic 
+          image: miheerscontainer.azurecr.io/miheerjspringpetclinic
+          ports:
+          - containerPort: 80
