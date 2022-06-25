@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '7249268a-8219-4f6c-83e4-8850b0e089d0'
   imageRepository: 'miheerjspringpetclinic'
   containerRegistry: 'miheerscontainer.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '**/docker-compose.yml'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'miheerscontainerb2dd-auth'
 
